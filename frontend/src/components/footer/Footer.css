@@ -1,0 +1,100 @@
+.FnavLogo {
+  color: whitesmoke;
+  font-size: 1.2rem;
+}
+.FnavbarWrapper {
+  background: #10151e;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+
+.FnavLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+  flex-direction: column;
+}
+.FnavLinkss {
+  display: flex;
+  gap: 2rem;
+}
+.FtelephoneImg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.FinboxImg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Fdownload {
+  border: 2px solid rgba(238, 232, 232, 0.826);
+  padding: 10px;
+  border-radius: 40px;
+  color: rgba(238, 232, 232, 0.826);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+.ffooterImg {
+  display: flex;
+
+  height: 30px;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.logoBottom h4 {
+    display: none;
+}
+.potty {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.privacy {
+    display:none;
+}
+
+@media only screen and (max-width: 650px) {
+  .FnavbarWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+  }
+  .ffooterImg {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    gap: 20%;
+    width: 100%;
+  }
+  .FnavLinkss {
+    flex-direction: column-reverse;
+  }
+  .potty {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .logoBottom h4 {
+    color: #ffffff;
+  }
+  .privacy {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    gap: 20px;
+}
+}

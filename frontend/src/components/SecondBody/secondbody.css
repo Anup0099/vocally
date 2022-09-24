@@ -1,0 +1,66 @@
+.secondBody {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 100px 100px 0px 100px;
+  gap: 100px;
+  background-color: #10141b;
+  scroll-behavior: smooth;
+}
+.SecondBodyLeft {
+  display: flex;
+  flex: 1;
+}
+.SecondBodyRight {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.SecondBodyLeft img {
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+}
+.SecondBodyRight > h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  width: 300px;
+}
+.SecondBodyRight > p {
+  color: white;
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.SecondBodyRight > button {
+  border: 1px solid white;
+  border-radius: 35px;
+  padding: 25px;
+  width: 350px;
+  color: white;
+  font-size: 20px;
+  background-color: #10151e;
+}
+@media only  screen and (max-width: 650px) {
+  .secondBody {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 0px 20px;
+    gap: 1rem;
+  }
+  .SecondBodyLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding-top: 0px;
+  }
+  .SecondBodyLeft img {
+    width: 300px;
+    height: 500px;
+  }
+}

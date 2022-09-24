@@ -1,0 +1,181 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bodyWrapper {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 2.5em;
+  font-weight: 50;
+}
+.LeftPart {
+  display: flex;
+  flex: 1;
+  padding-left: 100px;
+  flex-direction: column;
+}
+.bodyLeftPara {
+  color: white;
+  font-size: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.form > input {
+  border: 1px solid white;
+  border-radius: 35px;
+  padding: 25px;
+  width: 300px;
+  color: white;
+  font-size: 16px;
+  background-color: #10151e;
+
+  outline: none;
+}
+.form > button {
+  border: 1px solid white;
+  border-radius: 35px;
+  padding: 25px;
+  width: 350px;
+  color: white;
+  font-size: 20px;
+  background-color: #10151e;
+}
+.form > button:hover {
+  background-color: rgb(60, 0, 128);
+  color: white;
+  cursor: pointer;
+}
+.bodyImg {
+  display: flex;
+  flex: 2;
+}
+
+.bodyImg > img {
+  width: 90%;
+  height: 100%;
+}
+
+.bodyFooter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.dropdown {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown :hover {
+  transform: rotate(180deg);
+}
+.footerImg {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  gap: 30px;
+}
+.error{
+  color: rgb(255, 0, 0);
+  font-size:14px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* media queries */
+@media only screen and (max-width: 650px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .bodyWrapper{
+    width: 100%;
+    flex-direction: column;
+  }
+  .LeftPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  .bodyleft{
+    font-size: 16px;
+    font-weight:800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bodyLeftPara{
+   padding-right: 50px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .form > input {
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 25px;
+    width: 90%;
+    color: white;
+    font-size: 16px;
+    background-color: #10151e;
+  
+    outline: none;
+  }
+  .form > button {
+    border: 1px solid white;
+    border-radius: 35px;
+    padding: 25px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background-color: #10151e;
+  }
+  .form > button:hover {
+    background-color: rgb(60, 0, 128);
+    color: white;
+    cursor: pointer;
+  }
+  .bodyImg {
+    display: flex;
+    flex: 2;
+    width: 100%;
+  }
+  
+  .bodyImg  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 80%;
+    height: 100%;
+  }
+  .dropdown{
+    display:none;
+  }
+  .footerImg{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+  }
+}
